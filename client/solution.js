@@ -4,10 +4,10 @@ console.log("Welcome to the robot dance party! 💃🤖🕺")
 const fetchRobots = async () => {
   const response = await fetch('/robots')
   const robots = await response.json()
-  console.log(robots)
+  // console.log(robots)
   return robots
 }
-fetchRobots()
+// fetchRobots()
 const inviteButton = document.getElementById('invite-robots')
 inviteButton.addEventListener('click', async () => {
   const content = document.getElementById('content')
